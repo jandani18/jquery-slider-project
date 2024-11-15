@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css "
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css "
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 40%;
+            margin: 0 auto;
+        }
+
+        .card img {
+            margin-top: 40px;
+            height: 600px;
+            width: 600px !important;
+            margin-left: 90px;
+        }
+
+        .slick-prev {
+            background: black !important;
+            left: -37px;
+            top: 310px;
+        }
+
+        .slick-next {
+            background: black !important;
+            right: -25px;
+            top:310px;
+        }
+        .mainparent{
+            background-color: black;
+            height: 100vh;
+        }
+        .logo{
+            padding-top: 80px;
+            padding-left: 40px;
+            display: flex;
+        }
+        .logo h1{
+            color: white;
+            font-size: 80px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 90px;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="mainparent">
+<div class="logo">
+    <img src="./images/logo_360x.webp" height="50px" alt="">
+    <h1> WHAT'S NEW IN THIS WEEKEND</h1>
+</div>
+    <div class="container">
+
+        <div class="parent">
+            <div class="card">
+                <img src="./images/j1.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="./images/j2.webp" alt="">
+            </div>
+            
+            <div class="card">
+                <img src="./images/k1.webp" alt="">
+            </div>
+            <div class="card">
+                <img src="./images/k2.webp" alt="">
+            </div>
+            <div class="card">
+                <img src="./images/k3.webp" alt="">
+            </div>
+            <div class="card">
+                <img src="./images/k5.webp" alt="">
+            </div>
+            <div class="card">
+                <img src="./images/k4.webp" alt="">
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js "
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js "
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js "
+        integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.parent').slick({
+                dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+
+</html>
